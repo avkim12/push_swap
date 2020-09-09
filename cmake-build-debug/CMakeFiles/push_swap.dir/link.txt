@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/push_swap.dir/main.c.o CMakeFiles/push_swap.dir/src/push_swap.c.o CMakeFiles/push_swap.dir/src/swap.c.o CMakeFiles/push_swap.dir/src/push.c.o CMakeFiles/push_swap.dir/src/rotate.c.o CMakeFiles/push_swap.dir/src/reverse_rotate.c.o CMakeFiles/push_swap.dir/libft/src/ft_atoi.c.o  -o push_swap 
