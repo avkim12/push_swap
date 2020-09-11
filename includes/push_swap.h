@@ -18,6 +18,6 @@ typedef	struct			s_stack
 	t_stack_elem		*head;
 }						t_stack;
 
-void 					push_swap(int ac, char **av);
+void* 					push_swap(int ac, char **av);
 
 #endif
