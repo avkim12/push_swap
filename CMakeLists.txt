@@ -8,9 +8,8 @@ include_directories(libft/includes)
 
 add_executable( push_swap
                 main.c
-                main.c
-                src/push_swap.c
                 includes/push_swap.h
+                src/push_swap.c
                 src/swap.c
                 src/push.c
                 src/rotate.c
