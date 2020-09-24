@@ -74,9 +74,6 @@ add_executable(push_swap
         libft/src/ft_tolower.c
         libft/src/ft_toupper.c
         libft/src/get_next_line.c
-        src/push.c
+        src/operations.c
         src/push_swap.c
-        src/reverse_rotate.c
-        src/rotate.c
-        src/swap.c
         main.c)

@@ -6,25 +6,37 @@
 
 #include <stdio.h>
 
-void 		*push_swap(int ac, char **av)
+void 				*push_swap(int ac, char **av)
 {
-	t_stack a;
+	t_stack			*a;
+	t_stack			*b;
+	t_stack_elem	*tmp;
 
-	av = ft_strsplit(*av, ' ');
+	tmp = a->head;
+	if (!(av = ft_strsplit(av[1], ' ')))
+		return (NULL);
 	while (*av)
 	{
-		if (!(a.head = (t_stack_elem*)malloc(sizeof(t_stack_elem))))
+		if (!(tmp = (t_stack_elem*)malloc(sizeof(t_stack_elem))))
 			return(NULL);
-		a.head->number = ft_atoi(*av);
-		a.head = a.head->next;
+		if (!(b->head = (t_stack_elem*)malloc(sizeof(t_stack_elem))))
+			return(NULL);
+		tmp->number = ft_atoi(*av);
+
+		b->head->number = 0;
+		printf("%i\n", b->head->number);
+
+		tmp = tmp->next;
+
+		b->head = b->head->next;
 		av++;
 	}
-	while (a.head->next)
+
+	push(a, b);
+	while (a->head)
 	{
-
-		printf("%i\n", a.head->number);
-
-		a.head = a.head->next;
+		printf("%i\n", a->head->number);
+		a->head = a->head->next;
 	}
 	return (0);
 }

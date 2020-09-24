@@ -19,5 +19,9 @@ typedef	struct			s_stack
 }						t_stack;
 
 void* 					push_swap(int ac, char **av);
+void					swap(t_stack_elem *elem);
+void					push(t_stack *to_stack, t_stack *from_stack);
+void					rotate(t_stack *stack);
+void					reverse_rotate(t_stack *stack);
 
 #endif
