@@ -31,7 +31,7 @@ void				push(t_stack *from_stack, t_stack *to_stack)
 
 void				rotate(t_stack *stack)
 {
-	t_stack_elem 	*tmp;
+	t_stack_elem	*tmp;
 
 	tmp = stack->head;
 	stack->head = stack->head->next;
