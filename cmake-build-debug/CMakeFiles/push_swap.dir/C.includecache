@@ -26,6 +26,14 @@ string.h
 get_next_line.h
 ../libft/includes/get_next_line.h
 
+/Users/gyellowj/CLionProjects/push_swap/main.c
+push_swap.h
+/Users/gyellowj/CLionProjects/push_swap/push_swap.h
+
+/Users/gyellowj/CLionProjects/push_swap/src/operations.c
+push_swap.h
+-
+
 /Users/gyellowj/CLionProjects/push_swap/src/push_swap.c
 push_swap.h
 /Users/gyellowj/CLionProjects/push_swap/src/push_swap.h
