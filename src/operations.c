@@ -16,16 +16,15 @@ void				swap(t_stack_elem *elem)
 	}
 }
 
-void				push(t_stack *from_stack, t_stack *to_stack)
+void				push(t_stack from_stack, t_stack to_stack)
 {
 	t_stack_elem	*tmp;
 
-	if (from_stack->head)
+	if (from_stack.head)
 	{
-		tmp = from_stack->head->next;
-		from_stack->head->next = to_stack->head;
-		from_stack->head = tmp;
-		free(tmp);
+		tmp = from_stack.head->next;
+		from_stack.head->next = to_stack.head;
+		from_stack.head = tmp;
 	}
 }
 
