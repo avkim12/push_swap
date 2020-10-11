@@ -69,7 +69,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/gyellowj/CLionProjects/push_swap/libft/src/ft_toupper.c" "/Users/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/src/ft_toupper.c.o"
   "/Users/gyellowj/CLionProjects/push_swap/libft/src/get_next_line.c" "/Users/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/src/get_next_line.c.o"
   "/Users/gyellowj/CLionProjects/push_swap/main.c" "/Users/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
-  "/Users/gyellowj/CLionProjects/push_swap/src/operations.c" "/Users/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/operations.c.o"
+  "/Users/gyellowj/CLionProjects/push_swap/src/actions.c" "/Users/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/actions.c.o"
+  "/Users/gyellowj/CLionProjects/push_swap/src/median.c" "/Users/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/median.c.o"
   "/Users/gyellowj/CLionProjects/push_swap/src/push_swap.c" "/Users/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_swap.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

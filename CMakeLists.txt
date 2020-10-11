@@ -74,6 +74,6 @@ add_executable(push_swap
         libft/src/ft_tolower.c
         libft/src/ft_toupper.c
         libft/src/get_next_line.c
-        src/operations.c
+        src/actions.c
         src/push_swap.c
-        main.c)
+        main.c src/median.c)

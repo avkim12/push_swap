@@ -258,10 +258,15 @@ CMakeFiles/push_swap.dir/main.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/push_swap.dir/main.c.o: ../libft/includes/libft.h
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
 
-CMakeFiles/push_swap.dir/src/operations.c.o: ../includes/push_swap.h
-CMakeFiles/push_swap.dir/src/operations.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/push_swap.dir/src/operations.c.o: ../libft/includes/libft.h
-CMakeFiles/push_swap.dir/src/operations.c.o: ../src/operations.c
+CMakeFiles/push_swap.dir/src/actions.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/actions.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/src/actions.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/actions.c.o: ../src/actions.c
+
+CMakeFiles/push_swap.dir/src/median.c.o: ../includes/push_swap.h
+CMakeFiles/push_swap.dir/src/median.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/src/median.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap.dir/src/median.c.o: ../src/median.c
 
 CMakeFiles/push_swap.dir/src/push_swap.c.o: ../includes/push_swap.h
 CMakeFiles/push_swap.dir/src/push_swap.c.o: ../libft/includes/get_next_line.h

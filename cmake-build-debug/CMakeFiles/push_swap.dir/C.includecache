@@ -9,6 +9,8 @@
 ../includes/push_swap.h
 ../libft/includes/libft.h
 ../libft/includes/libft.h
+stdio.h
+-
 
 ../libft/includes/get_next_line.h
 libft.h
@@ -26,17 +28,7 @@ string.h
 get_next_line.h
 ../libft/includes/get_next_line.h
 
-/Users/gyellowj/CLionProjects/push_swap/main.c
-push_swap.h
-/Users/gyellowj/CLionProjects/push_swap/push_swap.h
-
-/Users/gyellowj/CLionProjects/push_swap/src/operations.c
-push_swap.h
--
-
-/Users/gyellowj/CLionProjects/push_swap/src/push_swap.c
+/Users/gyellowj/CLionProjects/push_swap/src/median.c
 push_swap.h
 /Users/gyellowj/CLionProjects/push_swap/src/push_swap.h
-stdio.h
--
 

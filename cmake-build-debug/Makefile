@@ -1898,32 +1898,59 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
 .PHONY : main.c.s
 
-src/operations.o: src/operations.c.o
+src/actions.o: src/actions.c.o
 
-.PHONY : src/operations.o
+.PHONY : src/actions.o
 
 # target to build an object file
-src/operations.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.o
-.PHONY : src/operations.c.o
+src/actions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/actions.c.o
+.PHONY : src/actions.c.o
 
-src/operations.i: src/operations.c.i
+src/actions.i: src/actions.c.i
 
-.PHONY : src/operations.i
+.PHONY : src/actions.i
 
 # target to preprocess a source file
-src/operations.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.i
-.PHONY : src/operations.c.i
+src/actions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/actions.c.i
+.PHONY : src/actions.c.i
 
-src/operations.s: src/operations.c.s
+src/actions.s: src/actions.c.s
 
-.PHONY : src/operations.s
+.PHONY : src/actions.s
 
 # target to generate assembly for a file
-src/operations.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.s
-.PHONY : src/operations.c.s
+src/actions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/actions.c.s
+.PHONY : src/actions.c.s
+
+src/median.o: src/median.c.o
+
+.PHONY : src/median.o
+
+# target to build an object file
+src/median.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/median.c.o
+.PHONY : src/median.c.o
+
+src/median.i: src/median.c.i
+
+.PHONY : src/median.i
+
+# target to preprocess a source file
+src/median.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/median.c.i
+.PHONY : src/median.c.i
+
+src/median.s: src/median.c.s
+
+.PHONY : src/median.s
+
+# target to generate assembly for a file
+src/median.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/median.c.s
+.PHONY : src/median.c.s
 
 src/push_swap.o: src/push_swap.c.o
 
@@ -2156,9 +2183,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/operations.o"
-	@echo "... src/operations.i"
-	@echo "... src/operations.s"
+	@echo "... src/actions.o"
+	@echo "... src/actions.i"
+	@echo "... src/actions.s"
+	@echo "... src/median.o"
+	@echo "... src/median.i"
+	@echo "... src/median.s"
 	@echo "... src/push_swap.o"
 	@echo "... src/push_swap.i"
 	@echo "... src/push_swap.s"

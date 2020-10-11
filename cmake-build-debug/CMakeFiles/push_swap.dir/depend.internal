@@ -258,11 +258,16 @@ CMakeFiles/push_swap.dir/main.c.o
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
  /Users/gyellowj/CLionProjects/push_swap/main.c
-CMakeFiles/push_swap.dir/src/operations.c.o
+CMakeFiles/push_swap.dir/src/actions.c.o
  ../includes/push_swap.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
- /Users/gyellowj/CLionProjects/push_swap/src/operations.c
+ /Users/gyellowj/CLionProjects/push_swap/src/actions.c
+CMakeFiles/push_swap.dir/src/median.c.o
+ ../includes/push_swap.h
+ ../libft/includes/get_next_line.h
+ ../libft/includes/libft.h
+ /Users/gyellowj/CLionProjects/push_swap/src/median.c
 CMakeFiles/push_swap.dir/src/push_swap.c.o
  ../includes/push_swap.h
  ../libft/includes/get_next_line.h
