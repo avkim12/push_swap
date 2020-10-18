@@ -1925,33 +1925,6 @@ src/actions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/actions.c.s
 .PHONY : src/actions.c.s
 
-src/median.o: src/median.c.o
-
-.PHONY : src/median.o
-
-# target to build an object file
-src/median.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/median.c.o
-.PHONY : src/median.c.o
-
-src/median.i: src/median.c.i
-
-.PHONY : src/median.i
-
-# target to preprocess a source file
-src/median.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/median.c.i
-.PHONY : src/median.c.i
-
-src/median.s: src/median.c.s
-
-.PHONY : src/median.s
-
-# target to generate assembly for a file
-src/median.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/median.c.s
-.PHONY : src/median.c.s
-
 src/push_swap.o: src/push_swap.c.o
 
 .PHONY : src/push_swap.o
@@ -1978,6 +1951,33 @@ src/push_swap.s: src/push_swap.c.s
 src/push_swap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_swap.c.s
 .PHONY : src/push_swap.c.s
+
+src/sort.o: src/sort.c.o
+
+.PHONY : src/sort.o
+
+# target to build an object file
+src/sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/sort.c.o
+.PHONY : src/sort.c.o
+
+src/sort.i: src/sort.c.i
+
+.PHONY : src/sort.i
+
+# target to preprocess a source file
+src/sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/sort.c.i
+.PHONY : src/sort.c.i
+
+src/sort.s: src/sort.c.s
+
+.PHONY : src/sort.s
+
+# target to generate assembly for a file
+src/sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/sort.c.s
+.PHONY : src/sort.c.s
 
 # Help Target
 help:
@@ -2186,12 +2186,12 @@ help:
 	@echo "... src/actions.o"
 	@echo "... src/actions.i"
 	@echo "... src/actions.s"
-	@echo "... src/median.o"
-	@echo "... src/median.i"
-	@echo "... src/median.s"
 	@echo "... src/push_swap.o"
 	@echo "... src/push_swap.i"
 	@echo "... src/push_swap.s"
+	@echo "... src/sort.o"
+	@echo "... src/sort.i"
+	@echo "... src/sort.s"
 .PHONY : help
 
 

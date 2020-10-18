@@ -65,8 +65,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/libft/src/get_next_line.c.o"
   "CMakeFiles/push_swap.dir/main.c.o"
   "CMakeFiles/push_swap.dir/src/actions.c.o"
-  "CMakeFiles/push_swap.dir/src/median.c.o"
   "CMakeFiles/push_swap.dir/src/push_swap.c.o"
+  "CMakeFiles/push_swap.dir/src/sort.c.o"
   "push_swap"
   "push_swap.pdb"
 )

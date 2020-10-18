@@ -4,57 +4,47 @@
 
 #include "push_swap.h"
 
-void 				*fill_stack(char **av, t_stack *a, t_stack *b)
-{
-	t_stack_elem	*tmp_a;
-	t_stack_elem	*tmp_b;
-
-	a->size = 0;
-	tmp_a = a->head;
-	tmp_b = b->head;
-	if (!(av = ft_strsplit(av[1], ' ')))
-		return (NULL);
-	while (*av)
-	{
-		tmp_a->number = ft_atoi(*av);
-		tmp_b->number = 0;
-		tmp_a->next = NULL;
-		tmp_b->next = NULL;
-		a->size++;
-		av++;
-		if (*av)
-		{
-			if (!(tmp_a->next = (t_stack_elem *)malloc(sizeof(t_stack_elem))))
-				return (NULL);
-			if (!(tmp_b->next = (t_stack_elem *)malloc(sizeof(t_stack_elem))))
-				return (NULL);
-			tmp_a = tmp_a->next;
-			tmp_b = tmp_b->next;
-		}
-	}
-}
-
 void				*push_swap(int ac, char **av)
 {
 	t_stack			a;
 	t_stack			b;
+	int 			i;
 
-	if (!(a.head = (t_stack_elem *)malloc(sizeof(t_stack_elem))))
+	i = 0;
+	a.size = 0;
+	if (!(av = ft_strsplit(av[1], ' ')))
 		return (NULL);
-	if (!(b.head = (t_stack_elem *)malloc(sizeof(t_stack_elem))))
+	while (av[i++])
+		a.size++;
+	i = 0;
+	if (!(a.arr = (int *)malloc(sizeof(int) * a.size)))
 		return (NULL);
-	fill_stack(av, &a, &b);
-	median(a);
-//	while (a.head)
-//	{
-//		printf("  %i\n", a.head->number);
-//		a.head = a.head->next;
-//	}
-//	printf("______\n");
-//	while (b.head)
-//	{
-//		printf("  %i\n", b.head->number);
-//		b.head = b.head->next;
-//	}
+	if (!(b.arr = (int *)malloc(sizeof(int) * a.size)))
+		return (NULL);
+	while (*av)
+	{
+		a.arr[i] = ft_atoi(*av);
+		av++;
+		i++;
+	}
+
+	i = 0;
+	while (a.arr[i])
+		printf("%d ", a.arr[i++]);
+	i = 0;
+	printf("\n");
+	while (b.arr[i])
+		printf("%d ", b.arr[i++]);
+	printf("\n");
+
+	sort(&a, &b);
+
+	i = 0;
+	while (a.arr[i])
+		printf("%d ", a.arr[i++]);
+	printf("\n");
+	i = 0;
+	while (b.arr[i])
+		printf("%d ", b.arr[i++]);
 	return (0);
 }

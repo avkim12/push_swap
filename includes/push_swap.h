@@ -9,23 +9,17 @@
 
 #include <stdio.h>
 
-typedef struct			s_stack_elem
-{
-	int 				number;
-	struct s_stack_elem	*next;
-}						t_stack_elem;
-
 typedef	struct			s_stack
 {
-	t_stack_elem		*head;
+	int 				*arr;
 	size_t 				size;
 }						t_stack;
 
 void* 					push_swap(int ac, char **av);
-void					swap(t_stack_elem *elem);
+void					swap(t_stack *stack);
 void					push(t_stack *from_stack, t_stack *to_stack);
 void					rotate(t_stack *stack);
 void					reverse_rotate(t_stack *stack);
-void					*median(t_stack a);
+void					sort(t_stack *a, t_stack *b);
 
 #endif
