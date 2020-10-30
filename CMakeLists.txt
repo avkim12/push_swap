@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.16)
 project(push_swap C)
 
 set(CMAKE_C_STANDARD 11)
@@ -76,4 +76,5 @@ add_executable(push_swap
         libft/src/get_next_line.c
         src/actions.c
         src/push_swap.c
-        main.c src/sort.c)
+        src/sort.c
+        main.c)

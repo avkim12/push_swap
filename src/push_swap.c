@@ -12,39 +12,36 @@ void				*push_swap(int ac, char **av)
 
 	i = 0;
 	a.size = 0;
+	b.size = 0;
 	if (!(av = ft_strsplit(av[1], ' ')))
 		return (NULL);
-	while (av[i++])
+	while (av[a.size])
 		a.size++;
-	i = 0;
 	if (!(a.arr = (int *)malloc(sizeof(int) * a.size)))
 		return (NULL);
 	if (!(b.arr = (int *)malloc(sizeof(int) * a.size)))
 		return (NULL);
 	while (*av)
-	{
-		a.arr[i] = ft_atoi(*av);
-		av++;
-		i++;
-	}
+		a.arr[i++] = ft_atoi(*av++);
 
 	i = 0;
-	while (a.arr[i])
+	printf("A STACK: ");
+	while (i < a.size)
 		printf("%d ", a.arr[i++]);
 	i = 0;
-	printf("\n");
-	while (b.arr[i])
+	printf("\nB STACK: ");
+	while (i < b.size)
 		printf("%d ", b.arr[i++]);
-	printf("\n");
+	printf("\n\nA STACK: ");
 
-	sort(&a, &b);
+	a_to_b(&a, &b, a.size);
 
 	i = 0;
-	while (a.arr[i])
+	while (i < a.size)
 		printf("%d ", a.arr[i++]);
-	printf("\n");
+	printf("\nB STACK: ");
 	i = 0;
-	while (b.arr[i])
+	while (i < b.size)
 		printf("%d ", b.arr[i++]);
 	return (0);
 }

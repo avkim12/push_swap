@@ -18,26 +18,18 @@ void	swap(t_stack *stack)
 
 void	push(t_stack *from_stack, t_stack *to_stack)
 {
-	int	tmp;
 	int	i;
 
-	from_stack->size--;
-	from_stack->size++;
 	if (from_stack->arr)
 	{
-		i = 0;
-		tmp = from_stack->arr[i];
-		while (from_stack->arr[i])
-		{
-			from_stack->arr[i] = from_stack->arr[i + 1];
-			i++;
-		}
-		while (to_stack->arr[i])
-		{
+		from_stack->size--;
+		to_stack->size++;
+		i = to_stack->size;
+		while (i-- > 0)
 			to_stack->arr[i] = to_stack->arr[i - 1];
-			i++;
-		}
-		to_stack->arr[0] = tmp;
+		to_stack->arr[0] = from_stack->arr[0];
+		while (i++ < from_stack->size)
+			from_stack->arr[i] = from_stack->arr[i + 1];
 	}
 }
 
@@ -50,7 +42,7 @@ void	rotate(t_stack *stack)
 	if (stack->size > 1)
 	{
 		tmp = stack->arr[0];
-		while (stack->arr[i])
+		while (i < stack->size)
 		{
 			stack->arr[i] = stack->arr[i + 1];
 			i++;
