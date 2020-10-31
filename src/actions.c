@@ -33,16 +33,16 @@ void	push(t_stack *from_stack, t_stack *to_stack)
 	}
 }
 
-void	rotate(t_stack *stack)
+void	rotate(t_stack *stack, int size)
 {
 	int	tmp;
 	int	i;
 
 	i = 0;
-	if (stack->size > 1)
+	if (size > 1)
 	{
 		tmp = stack->arr[0];
-		while (i < stack->size)
+		while (i < size)
 		{
 			stack->arr[i] = stack->arr[i + 1];
 			i++;
@@ -51,19 +51,17 @@ void	rotate(t_stack *stack)
 	}
 }
 
-void	reverse_rotate(t_stack *stack)
+void	reverse_rotate(t_stack *stack, int size)
 {
 	int	tmp;
-	int	i;
 
-	i = (int)stack->size - 1;
-	if (stack->size > 1)
+	if (size > 1)
 	{
-		tmp = stack->arr[stack->size - 1];
-		while (i)
+		tmp = stack->arr[size - 1];
+		while (size)
 		{
-			stack->arr[i] = stack->arr[i - 1];
-			i--;
+			stack->arr[size] = stack->arr[size - 1];
+			size--;
 		}
 		stack->arr[0] = tmp;
 	}

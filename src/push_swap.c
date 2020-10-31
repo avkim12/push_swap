@@ -36,6 +36,8 @@ void				*push_swap(int ac, char **av)
 
 	a_to_b(&a, &b, a.size);
 
+//    reverse_rotate(&a, a.size);
+
 	i = 0;
 	while (i < a.size)
 		printf("%d ", a.arr[i++]);
