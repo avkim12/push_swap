@@ -30,11 +30,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5e1eb8b-5f81-4057-8529-0e8c0c32e10d" name="Default Changelist" comment="500 version">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/push_swap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/push_swap.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +42,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -75,6 +71,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -85,8 +86,13 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -123,6 +129,7 @@
       <workItem from="1604063307398" duration="185000" />
       <workItem from="1604063496194" duration="12377000" />
       <workItem from="1604141263934" duration="6152000" />
+      <workItem from="1604163605487" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="1 version">
       <created>1599665006832</created>
@@ -170,7 +177,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -203,20 +210,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="500 version" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="226" width="1502" height="1049" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604071527042">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state x="506" y="170" width="1084" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604163611716">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="350" y="226" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.947@0.23.1680.947" timestamp="1604071527042" />
     <state x="533" y="311" width="1502" height="1049" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603036865215" />
-    <state x="506" y="170" width="1084" height="788" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599820246785" />
+    <state x="506" y="170" width="1084" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604163611716" />
     <state x="831" y="259" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1599815990137">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="831" y="259" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599815990137" />
-    <state x="771" y="307" width="424" height="520" key="FileChooserDialogImpl" timestamp="1599820290999">
+    <state x="771" y="307" width="424" height="520" key="FileChooserDialogImpl" timestamp="1604163701702">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="771" y="307" width="424" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1599820290999" />
+    <state x="771" y="307" width="424" height="520" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1604163701702" />
     <state width="1358" height="298" key="GridCell.Tab.0.bottom" timestamp="1604148907827">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
@@ -265,16 +272,18 @@
     <state width="1358" height="298" key="GridCell.Tab.1.right/0.23.1680.947@0.23.1680.947" timestamp="1604082261702" />
     <state width="1786" height="359" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1603037348572" />
     <state width="1352" height="240" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1599820579123" />
-    <state width="420" height="145" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1604063491358">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="462" height="161" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1604163694622">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="420" height="145" key="ImportCMakeProjectWizard.bottomPanel/0.23.1680.947@0.23.1680.947" timestamp="1604063491358" />
     <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1601813427858" />
-    <state width="420" height="338" key="ImportCMakeProjectWizard.topPanel" timestamp="1604063491357">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state width="462" height="161" key="ImportCMakeProjectWizard.bottomPanel/72.27.1848.1053@72.27.1848.1053" timestamp="1604163694622" />
+    <state width="462" height="377" key="ImportCMakeProjectWizard.topPanel" timestamp="1604163694621">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="420" height="338" key="ImportCMakeProjectWizard.topPanel/0.23.1680.947@0.23.1680.947" timestamp="1604063491357" />
     <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/0.23.2560.1337@0.23.2560.1337" timestamp="1601813427858" />
+    <state width="462" height="377" key="ImportCMakeProjectWizard.topPanel/72.27.1848.1053@72.27.1848.1053" timestamp="1604163694621" />
     <state x="482" y="192" width="1023" height="737" key="SettingsEditor" timestamp="1599664545627">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

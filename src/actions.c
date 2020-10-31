@@ -14,6 +14,7 @@ void	swap(t_stack *stack)
 		stack->arr[0] = stack->arr[1];
 		stack->arr[1] = tmp;
 	}
+	printf("asd\n");
 }
 
 void	push(t_stack *from_stack, t_stack *to_stack)
@@ -31,6 +32,7 @@ void	push(t_stack *from_stack, t_stack *to_stack)
 		while (i++ < from_stack->size)
 			from_stack->arr[i] = from_stack->arr[i + 1];
 	}
+	printf("asd\n");
 }
 
 void	rotate(t_stack *stack, int size)
@@ -49,6 +51,7 @@ void	rotate(t_stack *stack, int size)
 		}
 		stack->arr[i - 1] = tmp;
 	}
+	printf("asd\n");
 }
 
 void	reverse_rotate(t_stack *stack, int size)
@@ -58,11 +61,9 @@ void	reverse_rotate(t_stack *stack, int size)
 	if (size > 1)
 	{
 		tmp = stack->arr[size - 1];
-		while (size)
-		{
+		while (size--)
 			stack->arr[size] = stack->arr[size - 1];
-			size--;
-		}
 		stack->arr[0] = tmp;
 	}
+	printf("asd\n");
 }

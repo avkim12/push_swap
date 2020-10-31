@@ -74,7 +74,7 @@ void 	*b_to_a(t_stack *b_chunk, t_stack *a_chunk, int b_chunk_size)
 		else
 		    rotate(b_chunk, b_chunk_size);
 	}
-    if (a_chunk_size > 2)
+    if (a_chunk_size > 1)
         a_to_b(a_chunk, b_chunk, a_chunk_size);
     if (b_chunk_size > 2)
 	    b_to_a(b_chunk, a_chunk, b_chunk_size);
@@ -112,6 +112,8 @@ void 	*a_to_b(t_stack *a_chunk, t_stack *b_chunk, int a_chunk_size)
 		else
 		    rotate(a_chunk, a_chunk_size);
 	}
+	if (a_chunk_size > 2)
+		a_to_b(a_chunk, b_chunk, a_chunk_size);
 	if (a_chunk_size == 2 && a_chunk->arr[0] > a_chunk->arr[1])
 	    swap(a_chunk);
     if (b_chunk->size > 0)
