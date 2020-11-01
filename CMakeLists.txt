@@ -77,4 +77,4 @@ add_executable(push_swap
     src/actions.c
     src/push_swap.c
     src/sort.c
-    main.c)
+    main.c src/checker.c)

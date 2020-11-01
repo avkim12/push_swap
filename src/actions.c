@@ -4,7 +4,7 @@
 
 #include "push_swap.h"
 
-void	swap(t_stack *stack)
+void	swap(t_stack *stack, char c)
 {
 	int	tmp;
 
@@ -14,10 +14,12 @@ void	swap(t_stack *stack)
 		stack->arr[0] = stack->arr[1];
 		stack->arr[1] = tmp;
 	}
-	printf("asd\n");
+	write(1, "s", 1);
+	write(1, &c, 1);
+	write(1, "\n", 1);
 }
 
-void	push(t_stack *from_stack, t_stack *to_stack)
+void	push(t_stack *from_stack, t_stack *to_stack, char c)
 {
 	int	i;
 
@@ -32,10 +34,12 @@ void	push(t_stack *from_stack, t_stack *to_stack)
 		while (i++ < from_stack->size)
 			from_stack->arr[i] = from_stack->arr[i + 1];
 	}
-	printf("asd\n");
+	write(1, "p", 1);
+	write(1, &c, 1);
+	write(1, "\n", 1);
 }
 
-void	rotate(t_stack *stack, int size)
+void	rotate(t_stack *stack, int size, char c)
 {
 	int	tmp;
 	int	i;
@@ -51,10 +55,12 @@ void	rotate(t_stack *stack, int size)
 		}
 		stack->arr[i - 1] = tmp;
 	}
-	printf("asd\n");
+	write(1, "r", 1);
+	write(1, &c, 1);
+	write(1, "\n", 1);
 }
 
-void	reverse_rotate(t_stack *stack, int size)
+void	reverse_rotate(t_stack *stack, int size, char c)
 {
 	int	tmp;
 
@@ -65,5 +71,7 @@ void	reverse_rotate(t_stack *stack, int size)
 			stack->arr[size] = stack->arr[size - 1];
 		stack->arr[0] = tmp;
 	}
-	printf("asd\n");
+	write(1, "rr", 1);
+	write(1, &c, 1);
+	write(1, "\n", 1);
 }
