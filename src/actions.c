@@ -39,36 +39,41 @@ void	push(t_stack *from_stack, t_stack *to_stack, char c)
 	write(1, "\n", 1);
 }
 
-void	rotate(t_stack *stack, int size, char c)
+void	rotate(t_stack *stack, char c)
 {
 	int	tmp;
 	int	i;
 
 	i = 0;
-	if (size > 1)
+	if (stack->size > 1)
 	{
 		tmp = stack->arr[0];
-		while (i < size)
+		while (i < stack->size - 1)
 		{
 			stack->arr[i] = stack->arr[i + 1];
 			i++;
 		}
-		stack->arr[i - 1] = tmp;
+		stack->arr[i] = tmp;
 	}
 	write(1, "r", 1);
 	write(1, &c, 1);
 	write(1, "\n", 1);
 }
 
-void	reverse_rotate(t_stack *stack, int size, char c)
+void	reverse_rotate(t_stack *stack, char c)
 {
 	int	tmp;
+	int	i;
 
-	if (size > 1)
+	i = stack->size - 1;
+	if (stack->size > 1)
 	{
-		tmp = stack->arr[size - 1];
-		while (size--)
-			stack->arr[size] = stack->arr[size - 1];
+		tmp = stack->arr[stack->size - 1];
+		while (i)
+		{
+			stack->arr[i] = stack->arr[i - 1];
+			i--;
+		}
 		stack->arr[0] = tmp;
 	}
 	write(1, "rr", 1);
