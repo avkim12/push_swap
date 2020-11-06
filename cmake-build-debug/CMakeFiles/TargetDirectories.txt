@@ -1,3 +1,0 @@
-/home/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/gyellowj/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir
