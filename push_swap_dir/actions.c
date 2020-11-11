@@ -1,6 +1,4 @@
-//
-// Created by gyellowj on 13.08.2020.
-//
+
 
 #include "push_swap.h"
 

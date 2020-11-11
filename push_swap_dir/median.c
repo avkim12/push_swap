@@ -1,9 +1,19 @@
-//
-// Created by gyellowj on 06.11.2020.
-//
+
 
 #include "push_swap.h"
-#include <stdlib.h>
+
+int		is_a_sorted(t_stack *chunk, int size)
+{
+	int i = 0;
+
+	while (i < size - 1)
+	{
+		if (chunk->arr[i] > chunk->arr[i + 1])
+			return (0);
+		i++;
+	}
+	return (1);
+}
 
 void	quick_sort(int *arr, int first, int last, int pivot)
 {

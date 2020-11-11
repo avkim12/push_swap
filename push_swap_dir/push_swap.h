@@ -1,6 +1,4 @@
-//
-// Created by gyellowj on 12.08.2020.
-//
+
 
 #ifndef PUSH_SWAP_H
 #define PUSH_SWAP_H
@@ -14,15 +12,24 @@ typedef	struct			s_stack
 	int 				size;
 }						t_stack;
 
+typedef	struct			s_ps
+{
+	int 				i;
+	int 				mid;
+	int 				rotated;
+	int 				a_size;
+	int					b_size;
+}						t_ps;
+
 void					swap(t_stack *stack, char c);
 void					push(t_stack *from_stack, t_stack *to_stack, char c);
 void					rotate(t_stack *stack, char c);
 void					reverse_rotate(t_stack *stack, char c);
-int 					a_to_b(t_stack *a_chunk, t_stack *b_chunk, int a_chunk_size, int mid);
-int						median(t_stack *chunk, int size);
-void					print(t_stack *a, t_stack *b);
+void 					a_to_b(t_stack *a, t_stack *b, int a_size, int mid);
 char					**ft_strsplit(char const *s, char c);
-int						ft_atoi(const char *str);
 char					*ft_strsub(char const *s, unsigned int start, size_t len);
+int						is_a_sorted(t_stack *chunk, int size);
+int						median(t_stack *chunk, int size);
+int						ft_atoi(const char *str);
 
 #endif

@@ -1,7 +1,3 @@
-//
-// Created by gyellowj on 09.09.2020.
-//
-
 #include "push_swap.h"
 
 #include <stdio.h>
