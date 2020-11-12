@@ -1,11 +1,21 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gyellowj <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/12 17:59:20 by gyellowj          #+#    #+#             */
+/*   Updated: 2020/11/12 17:59:26 by gyellowj         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
-int			ft_atoi(const char *str)
+long			ft_atoi(const char *str)
 {
-	int		flag;
-	size_t	atoi;
+	long	flag;
+	long	atoi;
 
 	atoi = 0;
 	flag = 1;

@@ -1,27 +1,19 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   parse.c                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: gyellowj <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/12 18:07:07 by gyellowj          #+#    #+#             */
-/*   Updated: 2020/11/12 18:07:10 by gyellowj         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+//
+// Created by Gaylord Yellowjacket on 11/12/20.
+//
 
-#include "checker.h"
+#include "push_swap.h"
 
-void			error_case(void)
+void		error_case(void)
 {
-	write(2, "ERROR\n", 6);
+	write(1, "ERROR\n", 6);
 	exit(0);
 }
 
-static int		counter(char *str)
+int			counter(char *str)
 {
-	int count;
-	int i;
+	int		count;
+	int		i;
 
 	i = 0;
 	count = 0;
@@ -41,10 +33,10 @@ static int		counter(char *str)
 	return (count);
 }
 
-static void		check_repeat(t_stack *ret, int index, char ch)
+void		check_repeat(t_stack *ret, int index, char ch)
 {
-	int i;
-	int j;
+	int		i;
+	int		j;
 
 	i = ret->arr[index];
 	if (ch == 's')
@@ -70,7 +62,7 @@ static void		check_repeat(t_stack *ret, int index, char ch)
 	}
 }
 
-t_stack			*parse_string(char *str)
+int		parse_string(char *str)
 {
 	t_stack	*ret;
 	int		i;
@@ -85,6 +77,8 @@ t_stack			*parse_string(char *str)
 	{
 		if ((str[i] >= '0' && str[i] <= '9') || str[i] == '-')
 		{
+			if (ft_atoi(&str[i]) > INT32_MAX || ft_atoi(&str[i]) < INT32_MIN)
+				error_case();
 			ret->arr[--count] = ft_atoi(&str[i]);
 			check_repeat(ret, count, 's');
 			while (str[i] != ' ' && str[i] != '\0')
@@ -93,10 +87,10 @@ t_stack			*parse_string(char *str)
 		if (str[i] == ' ')
 			i++;
 	}
-	return (ret);
+	return (1);
 }
 
-t_stack			*parse_arguments(char **argv, int argc)
+t_stack		*parse_arguments(char **argv, int argc)
 {
 	t_stack	*ret;
 	int		i;

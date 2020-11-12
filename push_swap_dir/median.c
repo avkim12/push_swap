@@ -1,11 +1,22 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   median.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gyellowj <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/12 18:00:31 by gyellowj          #+#    #+#             */
+/*   Updated: 2020/11/12 18:00:35 by gyellowj         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
 int		is_a_sorted(t_stack *chunk, int size)
 {
-	int i = 0;
+	int	i;
 
+	i = 0;
 	while (i < size - 1)
 	{
 		if (chunk->arr[i] > chunk->arr[i + 1])
@@ -57,5 +68,7 @@ int		median(t_stack *chunk, int size)
 		i++;
 	}
 	quick_sort(arr, 0, size - 1, 0);
-	return (arr[size / 2]);
+	i = arr[size / 2];
+	free(arr);
+	return (i);
 }

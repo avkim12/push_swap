@@ -1,22 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gyellowj <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/12 18:00:44 by gyellowj          #+#    #+#             */
+/*   Updated: 2020/11/12 18:00:46 by gyellowj         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-void 	three_elems(t_stack *a)
+void	three_elems(t_stack *a)
 {
 	if (a->arr[0] > a->arr[1] && a->arr[0] < a->arr[2] && a->arr[1] < a->arr[2])
 		swap(a, 'a');
-	else if (a->arr[0] > a->arr[1] && a->arr[0] > a->arr[2] && a->arr[1] > a->arr[2])
+	if (a->arr[0] > a->arr[1] && a->arr[0] > a->arr[2] && a->arr[1] > a->arr[2])
 	{
 		swap(a, 'a');
 		reverse_rotate(a, 'a');
 	}
-	else if (a->arr[0] > a->arr[1] && a->arr[0] > a->arr[2] && a->arr[1] < a->arr[2])
+	if (a->arr[0] > a->arr[1] && a->arr[0] > a->arr[2] && a->arr[1] < a->arr[2])
 		rotate(a, 'a');
-	else if (a->arr[0] < a->arr[1] && a->arr[0] < a->arr[2] && a->arr[1] > a->arr[2])
+	if (a->arr[0] < a->arr[1] && a->arr[0] < a->arr[2] && a->arr[1] > a->arr[2])
 	{
 		swap(a, 'a');
 		rotate(a, 'a');
 	}
-	else if (a->arr[0] < a->arr[1] && a->arr[0] > a->arr[2] && a->arr[1] > a->arr[2])
+	if (a->arr[0] < a->arr[1] && a->arr[0] > a->arr[2] && a->arr[1] > a->arr[2])
 		reverse_rotate(a, 'a');
 }
 
@@ -64,7 +76,7 @@ void	b_to_a(t_stack *b, t_stack *a, int b_size, int mid)
 		b_to_a(b, a, b_size, median(a, ps.a_size));
 }
 
-void 	a_to_bb(t_stack *a, t_stack *b, int a_size, t_ps ps)
+void	a_to_bb(t_stack *a, t_stack *b, int a_size, t_ps ps)
 {
 	while (ps.rotated-- && a_size != a->size)
 		reverse_rotate(a, 'a');
@@ -75,8 +87,7 @@ void 	a_to_bb(t_stack *a, t_stack *b, int a_size, t_ps ps)
 	b_to_a(b, a, ps.b_size, median(a, a_size));
 }
 
-
-void 	a_to_b(t_stack *a, t_stack *b, int a_size, int mid)
+void	a_to_b(t_stack *a, t_stack *b, int a_size, int mid)
 {
 	t_ps ps;
 

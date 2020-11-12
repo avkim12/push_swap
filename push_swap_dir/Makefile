@@ -1,4 +1,14 @@
-
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: gyellowj <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/11/12 18:01:11 by gyellowj          #+#    #+#              #
+#    Updated: 2020/11/12 18:01:14 by gyellowj         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 SRC = actions.c \
 	  median.c \
@@ -6,7 +16,8 @@ SRC = actions.c \
 	  sort.c \
 	  ft_atoi.c \
 	  ft_strsplit.c \
-	  ft_strsub.c
+	  ft_strsub.c \
+	  parse.c
 OBJ = $(patsubst %.c,%.o, $(SRC))
 NAME = push_swap
 INC = push_swap.h
