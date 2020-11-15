@@ -16,9 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-
-#include <stdio.h>
-
 typedef	struct			s_stack
 {
 	int					*arr;
@@ -41,10 +38,10 @@ void					reverse_rotate(t_stack *stack, char c);
 void					a_to_b(t_stack *a, t_stack *b, int a_size, int mid);
 char					**ft_strsplit(char const *s, char c);
 char					*ft_strsub(char const *s, unsigned int st, size_t len);
+long					ft_atoi(const char *str);
 int						parse_string(char *str);
 int						is_a_sorted(t_stack *chunk, int size);
 int						median(t_stack *chunk, int size);
-int						parse_arguments(char **argv, int argc);
-long					ft_atoi(const char *str);
+int						parse_arguments(char **argv, int argc, int i);
 
 #endif

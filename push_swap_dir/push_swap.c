@@ -11,106 +11,80 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
-void		free_all(t_stack *a, t_stack *b, char **av)
+
+void		free_all(t_stack *a, t_stack *b, char **str)
 {
 	int		i;
 
 	i = 0;
-	while (av[i])
-		free(av[i++]);
-	free(av);
+	while (str[i])
+		free(str[i++]);
+	free(str);
 	free(a->arr);
 	free(b->arr);
 }
 
-int 		str_arg(char **av, t_stack a, t_stack b)
+int			str_arg(char **av)
 {
 	int		i;
+	char	**str;
+	t_stack	a;
+	t_stack	b;
 
 	i = -1;
 	a.size = 0;
 	b.size = 0;
-	if (!(av = ft_strsplit(av[1], ' ')))
+	if (!(str = ft_strsplit(av[1], ' ')))
 		return (0);
-	while (av[a.size])
+	while (str[a.size])
 		a.size++;
 	if (!(a.arr = (int *)malloc(sizeof(int) * a.size)))
 		return (0);
 	if (!(b.arr = (int *)malloc(sizeof(int) * a.size)))
 		return (0);
-	while (av[++i])
-		a.arr[i] = ft_atoi(av[i]);
-	if (*a.arr)
+	while (str[++i])
+		a.arr[i] = ft_atoi(str[i]);
+	if (a.arr)
 		a_to_b(&a, &b, a.size, median(&a, a.size));
-	free_all(&a, &b, av);
+	free_all(&a, &b, str);
 	return (0);
 }
 
-int			sev_arg(int ac, char **av, t_stack a, t_stack b)
+int			sev_arg(int ac, char **av)
 {
 	int		i;
-	int 	j;
+	t_stack	a;
+	t_stack	b;
 
-	i = 0;
-	j = 1;
-	a.size = ac - 1;
-	b.size = ac - 1;
-	if (!(a.arr = (int *)malloc(sizeof(int) * a.size)))
+	i = -1;
+	a.size = ac;
+	b.size = 0;
+	if (!(a.arr = (int *)malloc(sizeof(int) * ac)))
 		return (0);
-	if (!(b.arr = (int *)malloc(sizeof(int) * a.size)))
+	if (!(b.arr = (int *)malloc(sizeof(int) * ac)))
 		return (0);
-	while (i < ac - 1)
-		a.arr[i++] = ft_atoi(av[j++]);
-	if (*a.arr)
+	while (av[++i])
+		a.arr[i] = ft_atoi(av[i]);
+	if (a.arr)
 		a_to_b(&a, &b, a.size, median(&a, a.size));
-//	free_all(&a, &b, av);
+	free(a.arr);
+	free(b.arr);
 	return (0);
 }
 
 int			main(int ac, char **av)
 {
-	t_stack	a;
-	t_stack	b;
-
 	if (ac == 2)
 	{
-//		if (!(parse_string(av[1])))
-//			return (0);
-		str_arg(av, a, b);
+		if (!(parse_string(av[1])))
+			return (0);
+		str_arg(av);
 	}
 	if (ac > 2)
 	{
-//		if (!(parse_arguments(av, --ac)))
-//			return (0);
-		sev_arg(ac, av, a, b);
+		if (!(parse_arguments(++av, --ac, -1)))
+			return (0);
+		sev_arg(ac, av);
 	}
 	return (0);
 }
-
-//int				main(int ac, char **av)
-//{
-//	t_stack			a;
-//	t_stack			b;
-//	int				i;
-//
-//	i = -1;
-//	a.size = 0;
-//	b.size = 0;
-//	if (ac != 2)
-//		return (0);
-//	if (!(av = ft_strsplit(av[1], ' ')))
-//		return (0);
-//	while (av[a.size])
-//		a.size++;
-//	if (!(a.arr = (int *)malloc(sizeof(int) * a.size)))
-//		return (0);
-//	if (!(b.arr = (int *)malloc(sizeof(int) * a.size)))
-//		return (0);
-//	while (av[++i])
-//		a.arr[i] = ft_atoi(av[i]);
-//	if (*a.arr)
-//		a_to_b(&a, &b, a.size, median(&a, a.size));
-//	free_all(&a, &b, av);
-//	return (0);
-//}

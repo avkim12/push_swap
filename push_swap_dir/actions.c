@@ -36,10 +36,11 @@ void	push(t_stack *from_stack, t_stack *to_stack, char c)
 		from_stack->size--;
 		to_stack->size++;
 		i = to_stack->size;
-		while (i-- > 0)
+		while (--i > 0)
 			to_stack->arr[i] = to_stack->arr[i - 1];
 		to_stack->arr[0] = from_stack->arr[0];
-		while (i++ < from_stack->size)
+		i = -1;
+		while (++i < from_stack->size)
 			from_stack->arr[i] = from_stack->arr[i + 1];
 	}
 	write(1, "p", 1);

@@ -1,6 +1,14 @@
-//
-// Created by Gaylord Yellowjacket on 11/12/20.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parse.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gyellowj <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/15 15:09:42 by gyellowj          #+#    #+#             */
+/*   Updated: 2020/11/15 15:09:44 by gyellowj         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
 
@@ -62,42 +70,40 @@ void		check_repeat(t_stack *ret, int index, char ch)
 	}
 }
 
-int		parse_string(char *str)
+int			parse_string(char *str)
 {
-	t_stack	*ret;
+	t_stack	ret;
 	int		i;
 	int		count;
 
 	i = 0;
 	count = counter(str);
-	ret = (t_stack*)malloc(sizeof(t_stack));
-	ret->size = count;
-	ret->arr = (int*)malloc(sizeof(int) * count);
+	ret.size = count;
+	ret.arr = (int*)malloc(sizeof(int) * count);
 	while (str[i] != '\0')
 	{
 		if ((str[i] >= '0' && str[i] <= '9') || str[i] == '-')
 		{
 			if (ft_atoi(&str[i]) > 2147483647 || ft_atoi(&str[i]) < -2147483648)
 				error_case();
-			ret->arr[--count] = ft_atoi(&str[i]);
-			check_repeat(ret, count, 's');
+			ret.arr[--count] = ft_atoi(&str[i]);
+			check_repeat(&ret, count, 's');
 			while (str[i] != ' ' && str[i] != '\0')
 				i++;
 		}
 		if (str[i] == ' ')
 			i++;
 	}
+	free(ret.arr);
 	return (1);
 }
 
-int			parse_arguments(char **argv, int argc)
+int			parse_arguments(char **argv, int argc, int i)
 {
-	t_stack	*ret;
-	int		i;
+	t_stack	ret;
 	int		k;
 
-	i = 0;
-	while (i < argc)
+	while (++i < argc)
 	{
 		k = -1;
 		if (argv[i][k + 1] == '-')
@@ -105,16 +111,18 @@ int			parse_arguments(char **argv, int argc)
 		while (argv[i][++k] != '\0')
 			if (argv[i][k] < '0' || argv[i][k] > '9')
 				error_case();
-		i++;
 	}
 	i = 0;
-	ret = (t_stack*)malloc(sizeof(t_stack));
-	ret->size = argc;
-	ret->arr = (int*)malloc(sizeof(int) * argc);
+	ret.size = argc;
+	ret.arr = (int*)malloc(sizeof(int) * argc);
 	while (--argc >= 0)
 	{
-		ret->arr[i++] = ft_atoi(argv[argc]);
-		check_repeat(ret, i - 1, 'a');
+		if (ft_atoi(argv[argc]) > 2147483647 \
+		|| ft_atoi(argv[argc]) < -2147483648)
+			error_case();
+		ret.arr[i++] = ft_atoi(argv[argc]);
+		check_repeat(&ret, i - 1, 'a');
 	}
+	free(ret.arr);
 	return (1);
 }
