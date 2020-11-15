@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="push_swap" targetName="push_swap" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -28,46 +30,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5e1eb8b-5f81-4057-8529-0e8c0c32e10d" name="Default Changelist" comment="2 version">
-      <change afterPath="$PROJECT_DIR$/push_swap_dir/parse.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/checker" beforeDir="false" afterPath="$PROJECT_DIR$/checker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/actions.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/actions.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker_dir/actions.o" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/actions.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/checker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/checker.h" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/checker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/checker.h.gch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/checker_dir/checker.o" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/checker.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/ft_atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/ft_atoi.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker_dir/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/ft_atoi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/ft_itoa.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker_dir/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/ft_itoa.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/ft_strcmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/ft_strcmp.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker_dir/ft_strcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/ft_strcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/parse.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker_dir/parse.o" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/parse.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checker_dir/print.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/print.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker_dir/print.o" beforeDir="false" afterPath="$PROJECT_DIR$/checker_dir/print.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/actions.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/actions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/actions.o" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/actions.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/ft_atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/ft_atoi.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/ft_atoi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/ft_strsplit.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/ft_strsplit.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/ft_strsplit.o" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/ft_strsplit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/ft_strsub.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/ft_strsub.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/ft_strsub.o" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/ft_strsub.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/median.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/median.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/median.o" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/median.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap_dir/parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/parse.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/push_swap.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/push_swap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/push_swap.h.gch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/push_swap.o" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/push_swap.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap_dir/sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/sort.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap_dir/sort.o" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap_dir/sort.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,12 +59,12 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1fzxEmWCNn8hfzpj6PVcXXBZ0yH" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -232,14 +213,19 @@
     </state>
     <state x="533" y="311" width="1502" height="1049" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1604248135381" />
     <state x="506" y="170" width="1084" height="788" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599820246785" />
-    <state x="938" y="515" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605195706451">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="749" y="414" width="649" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605273980273">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="938" y="515" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1605195706451" />
+    <state x="749" y="414" width="649" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1605273980273" />
     <state x="831" y="259" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1599815990137">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="831" y="259" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599815990137" />
+    <state x="742" y="307" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605273940578">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="742" y="307" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1605273940578" />
     <state x="771" y="307" width="424" height="520" key="FileChooserDialogImpl" timestamp="1599820290999">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

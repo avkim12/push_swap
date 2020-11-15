@@ -77,7 +77,7 @@ int		parse_string(char *str)
 	{
 		if ((str[i] >= '0' && str[i] <= '9') || str[i] == '-')
 		{
-			if (ft_atoi(&str[i]) > INT32_MAX || ft_atoi(&str[i]) < INT32_MIN)
+			if (ft_atoi(&str[i]) > 2147483647 || ft_atoi(&str[i]) < -2147483648)
 				error_case();
 			ret->arr[--count] = ft_atoi(&str[i]);
 			check_repeat(ret, count, 's');
@@ -90,7 +90,7 @@ int		parse_string(char *str)
 	return (1);
 }
 
-t_stack		*parse_arguments(char **argv, int argc)
+int			parse_arguments(char **argv, int argc)
 {
 	t_stack	*ret;
 	int		i;
@@ -116,5 +116,5 @@ t_stack		*parse_arguments(char **argv, int argc)
 		ret->arr[i++] = ft_atoi(argv[argc]);
 		check_repeat(ret, i - 1, 'a');
 	}
-	return (ret);
+	return (1);
 }

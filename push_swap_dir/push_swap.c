@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void				free_all(t_stack *a, t_stack *b, char **av)
+#include <stdio.h>
+void		free_all(t_stack *a, t_stack *b, char **av)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	while (av[i])
@@ -24,18 +24,9 @@ void				free_all(t_stack *a, t_stack *b, char **av)
 	free(b->arr);
 }
 
-
-int					main(int ac, char **av)
+int 		str_arg(char **av, t_stack a, t_stack b)
 {
-	t_stack			a;
-	t_stack			b;
-	int				i;
-
-	if (ac < 2)
-		return (0);
-	if (ac != 2 || !(parse_string(av[1])))
-		return (0);
-
+	int		i;
 
 	i = -1;
 	a.size = 0;
@@ -56,7 +47,48 @@ int					main(int ac, char **av)
 	return (0);
 }
 
-//int					main(int ac, char **av)
+int			sev_arg(int ac, char **av, t_stack a, t_stack b)
+{
+	int		i;
+	int 	j;
+
+	i = 0;
+	j = 1;
+	a.size = ac - 1;
+	b.size = ac - 1;
+	if (!(a.arr = (int *)malloc(sizeof(int) * a.size)))
+		return (0);
+	if (!(b.arr = (int *)malloc(sizeof(int) * a.size)))
+		return (0);
+	while (i < ac - 1)
+		a.arr[i++] = ft_atoi(av[j++]);
+	if (*a.arr)
+		a_to_b(&a, &b, a.size, median(&a, a.size));
+//	free_all(&a, &b, av);
+	return (0);
+}
+
+int			main(int ac, char **av)
+{
+	t_stack	a;
+	t_stack	b;
+
+	if (ac == 2)
+	{
+//		if (!(parse_string(av[1])))
+//			return (0);
+		str_arg(av, a, b);
+	}
+	if (ac > 2)
+	{
+//		if (!(parse_arguments(av, --ac)))
+//			return (0);
+		sev_arg(ac, av, a, b);
+	}
+	return (0);
+}
+
+//int				main(int ac, char **av)
 //{
 //	t_stack			a;
 //	t_stack			b;
